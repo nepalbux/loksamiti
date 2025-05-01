@@ -1,58 +1,306 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Website Under Development</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            text-align: center;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            background-color: #f5f5f5;
-            color: #333;
-        }
-        .container {
-            max-width: 600px;
-            padding: 20px;
-            background-color: white;
-            border-radius: 8px;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-        }
-        h1 {
-            color: #2c3e50;
-            margin-bottom: 20px;
-        }
-        p {
-            font-size: 18px;
-            margin-bottom: 30px;
-        }
-        a {
-            color: #3498db;
-            text-decoration: none;
-            font-weight: bold;
-        }
-        a:hover {
-            text-decoration: underline;
-        }
-        .construction-icon {
-            font-size: 50px;
-            margin-bottom: 20px;
-        }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>लोक सांस्कृतिक संरक्षण समिति</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css" rel="stylesheet">
+<script>
+tailwind.config = {
+theme: {
+extend: {
+colors: {
+primary: '#6366f1',
+secondary: '#4f46e5'
+},
+borderRadius: {
+'none': '0px',
+'sm': '4px',
+DEFAULT: '8px',
+'md': '12px',
+'lg': '10px',
+'xl': '10px',
+'2xl': '24px',
+'3xl': '32px',
+'full': '9999px',
+'button': '8px'
+}
+}
+}
+}
+</script>
+<style>
+:where([class^="ri-"])::before { content: "\f3c2"; }
+.hero-gradient {
+background: linear-gradient(50deg, rgba(255,255,255,0.95) 0%, rgba(255,255,255,0.95) 10%, rgba(255,255,255,0) 100%);
+}
+.scroll-down {
+animation: bounce 2s infinite;
+}
+@keyframes bounce {
+0%, 20%, 50%, 80%, 100% {transform: translateY(0);}
+40% {transform: translateY(-10px);}
+60% {transform: translateY(-5px);}
+}
+.slide {
+opacity: 0;
+z-index: 1;
+transition: opacity 1s ease-in-out;
+}
+.slide.active {
+opacity: 1;
+z-index: 2;
+}
+</style>
 </head>
-<body>
-    <div class="container">
-        <div class="construction-icon">🚧</div>
-        <h1>Under Development</h1>
-        <p>We're working hard to bring you an amazing experience. Please check back soon!</p>
-        <p>For more details, click <a href="https://ramrajabastakoti.com.np" target="_blank">here</a>.</p>
-    </div>
+<body class="bg-white">
+<header class="fixed w-full bg-white/95 backdrop-blur-sm z-50 shadow-sm">
+<nav class="container mx-auto px-6 py-4">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-3">
+<img src="https://readdy.ai/api/search-image?query=A minimalist and elegant logo design featuring a stylized family tree symbol with traditional Nepalese decorative elements. The design incorporates clean lines and sacred geometry patterns, rendered in deep indigo blue color. The composition is balanced and professional, suitable for a heritage organization. The style is modern yet culturally rooted, with subtle gradients and precise details&width=48&height=48&seq=1&orientation=squarish" alt="Logo Logo" class="w-12 h-12 object-contain">
+<div class="font-['arial'] text-2xl text-primary">लोक सांस्कृतिक संरक्षण समिति</div>
+</div>
+<div class="hidden md:flex items-center space-x-8">
+<a href="#home" class="text-blue-700 hover:text-primary transition-colors">Home</a>
+<a href="#about" class="text-blue-700 hover:text-primary transition-colors">About Us</a>
+<a href="#contact" class="text-blue-700 hover:text-primary transition-colors">Contact</a>
+<button class="bg-primary text-white px-6 py-2 !rounded-button hover:bg-secondary transition-colors cursor-pointer whitespace-nowrap">
+Call: 061........
+</button>
+</div>
+<button class="md:hidden w-10 h-10 flex items-center justify-center cursor-pointer">
+<i class="ri-menu-line text-2xl"></i>
+</button>
+</div>
+</nav>
+</header>
+<main>
+<section id="home" class="relative min-h-screen flex items-center">
+<div class="absolute inset-0 w-full h-full">
+<div class="slideshow relative w-full h-full">
+<div class="slide absolute inset-0 opacity-0 transition-opacity duration-1000" style="background-image: url('https://public.readdy.ai/ai/img_res/5efd88595ef17f6b0d7e3afa08a0acf6.jpg'); background-size: cover; background-position: center;"></div>
+<div class="slide absolute inset-0 opacity-0 transition-opacity duration-1000" style="background-image: url('https://media-hosting.imagekit.io/1607d169a77b4467/lok2.jpg?Expires=1840687412&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=WhQcDppWkxmiVbnnAceZcjH26PYy9Dw4Qwo99MZBsNW2WygguxYfSPdq5N96GSQlsRHnG0PrB8ixN67GCG3Vt3cqp-GqoBxt1NcZBWFdgE9gLKsXD0cCe-aUwlGY237coIFVfzjVdNB-WImeOleyNFRuG~kAG1Mpo1heTcznovNn-wE2EotXEIs10xlPJ9Jivp-uJsCKhxtuqmRJhpNO0p0xvC4AfZcRsjTQKl6rza5VgGj0TAEe58pZKv8gawt3sMyvC-jygeWjPshJEMNWS~6k05OknOzSmsK3fGsKh643NIklu2PaRhoEWPaDegSU6qbjDCjkXnO9sj9IQvXIAg__'); background-size: cover; background-position: center;"></div>
+<div class="slide absolute inset-0 opacity-0 transition-opacity duration-1000" style="background-image: url('https://media-hosting.imagekit.io/73ba3bf6e34342b2/lok4.jpg?Expires=1840687412&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=OVEFqonXEIzpnf12w-LpjUCxb2JSELRyl~UUaZHdhJQmPFrVY-1VfYEI50WG-OC0aDO-v6KjjjEHahyBFRRKcnvZdb71iGFF3KN0khF4HdrwRkwRN919bT9Ty~Wr0pP3I919R9Iq-BfpdjQ0XBXyZJngZNwFi5KC-Px6uAH6RQmLg3wTM5mnP7MDLfqRQPXOd-2YPZ0d6sLbeR96SsN9qImvR1Dc-sNO76VWSMAJaN-okrNFIbdxHn7jHXr~EXAEUPqKWRyjkLEyHUvZ~1X1VKTA9C4OSzIsitUd-VZzMYWPGFXN91H1UvkQIFDdBZf9zJNNcXgMwBuB~fQRVqoUCQ__'); background-size: cover; background-position: center;"></div>
+<div class="slide absolute inset-0 opacity-0 transition-opacity duration-1000" style="background-image: url('https://media-hosting.imagekit.io/c009e013256c47fc/lok1.jpg?Expires=1840687412&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=yenAaVYmEsHVjDVhrwy4RAd6yNH5C7U3CfchRcclCCSbNmVCtJdLgxmk0y9UJIJPuCwDHSn6wkBSL4hSAKhWdZV-aYWsHWS2UELNo5GU7F3pS4uaK7zCkTLfGkya0bo8aJZFFxxLBZW-DipmWv4DxPfHyzLAo84dt65SjyXELf132Lu9zT59dtXJGV2CNG81oT51I5q8QQF7upq1~JauoA0Ax~C3m7amOmJUriN3ifLGs-WJpa9YFHx-aZrCkGtQfqlaHVumOUNHtq-E7tm8-mhOIKn5WfyB76Z7fAizUj7MkUY3S-HLgWo5QKjlF5YZkpGzdM62xzrozP6WRkKm-Q__'); background-size: cover; background-position: center;"></div>
+</div>
+</div>
+
+</h1>
+<p class="text-xl text-blue-700 mb-8">
+Updating..........</p>
+<div class="flex flex-col sm:flex-row gap-4">
+<button class="bg-primary text-white px-8 py-3 !rounded-button hover:bg-secondary transition-colors cursor-pointer whitespace-nowrap text-lg">
+Start Exploring
+</button>
+<button class="bg-white text-primary border-2 border-primary px-8 py-3 !rounded-button hover:bg-gray-50 transition-colors cursor-pointer whitespace-nowrap text-lg">
+Learn More
+</button>
+</div>
+</div>
+</div>
+<div class="absolute bottom-10 left-1/2 -translate-x-1/2 scroll-down">
+<i class="ri-arrow-down-line text-4xl text-primary"></i>
+</div>
+</section>
+<section id="features" class="py-20 bg-gray-50">
+<div class="container mx-auto px-6">
+<h2 class="text-4xl font-bold text-center text-blue-700 mb-16">हाम्रा विशेषताहरू</h2>
+<div class="grid md:grid-cols-3 gap-8">
+<div class="bg-gradient-to-br from-rose-500 to-orange-400 p-8 !rounded-lg shadow-lg hover:shadow-xl transition-shadow">
+<div class="w-16 h-16 flex items-center justify-center bg-white/20 !rounded-full mb-6">
+<i class="ri-search-line text-2xl text-white"></i>
+</div>
+<h3 class="text-xl font-bold text-white mb-4">लोक सांस्कृतिक संरक्षण खोज: </h3>
+<p class="text-white/90">
+Updating.....</p>
+</div>
+<div class="bg-gradient-to-br from-emerald-500 to-teal-400 p-8 !rounded-lg shadow-lg hover:shadow-xl transition-shadow">
+<div class="w-16 h-16 flex items-center justify-center bg-white/20 !rounded-full mb-6">
+<i class="ri-file-list-3-line text-2xl text-white"></i>
+</div>
+<h3 class="text-xl font-bold text-white mb-4">डिजिटल रेकर्ड्स</h3>
+<p class="text-white/90">
+लोक सांस्कृतिक संरक्षण समितिको डिजिटल रूपमा उपलब्ध ऐतिहासिक कागजात र रेकर्डहरू तक पहुँच।
+</p>
+</div>
+<div class="bg-gradient-to-br from-blue-500 to-indigo-400 p-8 !rounded-lg shadow-lg hover:shadow-xl transition-shadow">
+<div class="w-16 h-16 flex items-center justify-center bg-white/20 !rounded-full mb-6">
+<i class="ri-community-line text-2xl text-white"></i>
+</div>
+<h3 class="text-xl font-bold text-white mb-4">सामुदायिक जडान</h3>
+<p class="text-white/90">
+हाम्रो सामुदायिक प्लेटफर्म मार्फत अन्य परिवार सदस्यहरूसँग जडान हुनुहोस् र कथाहरू साझा गर्नुहोस्।
+</p>
+</div>
+</div>
+</div>
+</section>
+<section id="about" class="py-20">
+<div class="container mx-auto px-6">
+<div class="flex flex-col md:flex-row items-center gap-12">
+<div class="w-full md:w-1/2">
+<img src="https://public.readdy.ai/ai/img_res/4d7db6f440b765e6b69e8419a278baa5.jpg" alt="About Us" class="w-full h-[400px] object-cover !rounded-lg shadow-xl">
+</div>
+<div class="w-full md:w-1/2">
+<h2 class="text-4xl font-bold text-blue-700 mb-6">हाम्रो संस्था को बारेमा</h2>
+<p class="text-gray-600 mb-6">
+Updating........
+
+<p class="text-gray-600 mb-8">
+</p>
+<button class="bg-primary text-white px-8 py-3 !rounded-button hover:bg-secondary transition-colors cursor-pointer whitespace-nowrap">
+Learn More About Us
+</button>
+</div>
+</div>
+</section>
+<section id="contact" class="py-20">
+<div class="container mx-auto px-6">
+<div class="max-w-4xl mx-auto">
+<h2 class="text-4xl font-bold text-center text-blue-700 mb-12">Contact Us</h2>
+<div class="mb-8 w-full h-[400px] !rounded-lg overflow-hidden relative">
+<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d2834.518379694589!2d84.0384208!3d28.1824611!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1sen!2snp!4v1746079849276!5m2!1sen!2snp" width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>" width="1100" height="550" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</div>
+<div class="bg-blue shadow-lg !rounded-lg p-8 mb-8">
+<div class="space-y-4">
+<div class="flex items-start gap-3">
+<i class="ri-map-pin-line text-xl text-primary mt-1"></i>
+<span class="text-gray-700">Contact Us</span>
+</div>
+
+</div>
+</div>
+<div class="bg-white shadow-xl !rounded-lg p-8">
+<form class="space-y-6">
+<div class="grid md:grid-cols-2 gap-6">
+<div>
+<label class="block text-sm font-medium text-gray-700 mb-2">First Name</label>
+<input type="text" class="w-full px-4 py-2 border border-gray-300 !rounded-button focus:outline-none focus:ring-2 focus:ring-primary">
+</div>
+<div>
+<label class="block text-sm font-medium text-gray-700 mb-2">Last Name</label>
+<input type="text" class="w-full px-4 py-2 border border-gray-300 !rounded-button focus:outline-none focus:ring-2 focus:ring-primary">
+</div>
+</div>
+<div>
+<label class="block text-sm font-medium text-gray-700 mb-2">Email</label>
+<input type="email" class="w-full px-4 py-2 border border-gray-300 !rounded-button focus:outline-none focus:ring-2 focus:ring-primary">
+</div>
+<div>
+<label class="block text-sm font-medium text-gray-700 mb-2">Message</label>
+<textarea rows="4" class="w-full px-4 py-2 border border-gray-300 !rounded-button focus:outline-none focus:ring-2 focus:ring-primary"></textarea>
+</div>
+<button type="submit" class="w-full bg-primary text-white px-8 py-3 !rounded-button hover:bg-secondary transition-colors cursor-pointer whitespace-nowrap">
+Send Message
+</button>
+</form>
+</div>
+</div>
+</div>
+</section>
+</main>
+<footer class="bg-gray-900 text-white py-12">
+<div class="container mx-auto px-6">
+<div class="grid md:grid-cols-4 gap-8">
+<div>
+<div class="flex items-center gap-3 mb-4">
+<img src="https://readdy.ai/api/search-image?query=A minimalist and elegant logo design featuring a stylized family tree symbol with traditional Nepalese decorative elements. The design incorporates clean lines and sacred geometry patterns, rendered in deep indigo blue color. The composition is balanced and professional, suitable for a heritage organization. The style is modern yet culturally rooted, with subtle gradients and precise details&width=48&height=48&seq=1&orientation=squarish" alt="BBAP Logo" class="w-12 h-12 object-contain">
+<div class="font-['Pacifico'] text-2xl text-white">लोक सांस्कृतिक संरक्षण समिति</div>
+</div>
+<p class="text-gray-400">
+Preserving our heritage, connecting generations.
+</p>
+</div>
+<div>
+<h3 class="text-lg font-semibold mb-4">Quick Links</h3>
+<ul class="space-y-2">
+<li><a href="#" class="text-gray-400 hover:text-white transition-colors">Home</a></li>
+<li><a href="#" class="text-gray-400 hover:text-white transition-colors">About Us</a></li>
+<li><a href="#" class="text-gray-400 hover:text-white transition-colors">Contact</a></li>
+<li><a href="#" class="text-gray-400 hover:text-white transition-colors">Download</a></li>
+</ul>
+</div>
+<div>
+<h3 class="text-lg font-semibold mb-4">Contact Info</h3>
+<ul class="space-y-2 text-gray-400">
+<li class="flex items-center gap-2">
+<i class="ri-map-pin-line"></i>
+<span>लोक सांस्कृतिक संरक्षण समिति</span>
+</li>
+<li class="flex items-center gap-2">
+<i class="ri-phone-line"></i>
+<span>+977 061.....</span>
+</li>
+<li class="flex items-center gap-2">
+<i class="ri-mail-line"></i>
+<span>info@loksamiti.org.np</span>
+</li>
+</ul>
+</div>
+<div>
+<h3 class="text-lg font-semibold mb-4">Follow Us</h3>
+<div class="flex space-x-4">
+<a href="#" class="w-10 h-10 flex items-center justify-center bg-gray-800 !rounded-full hover:bg-primary transition-colors">
+<i class="ri-facebook-fill"></i>
+</a>
+<a href="#" class="w-10 h-10 flex items-center justify-center bg-gray-800 !rounded-full hover:bg-primary transition-colors">
+<i class="ri-twitter-fill"></i>
+</a>
+<a href="#" class="w-10 h-10 flex items-center justify-center bg-gray-800 !rounded-full hover:bg-primary transition-colors">
+<i class="ri-instagram-fill"></i>
+</a>
+</div>
+</div>
+</div>
+<div class="border-t border-gray-800 mt-12 pt-8 text-center text-gray-400">
+<p>&copy; 2025 लोक सांस्कृतिक संरक्षण समिति. All rights reserved.</p>
+</div>
+<div class="mt-4 text-center">
+<p class="text-sm opacity-70">Developed by: <a href="https://ramrajabastakoti.com.np" target="_blank" class="underline hover:text-primary transition-colors">Ramraja </a></p>
+</div>
+</footer>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+const mobileMenuButton = document.querySelector('.md\\:hidden');
+const nav = document.querySelector('.md\\:flex');
+mobileMenuButton.addEventListener('click', function() {
+nav.classList.toggle('hidden');
+});
+// Slideshow functionality
+const slides = document.querySelectorAll('.slide');
+let currentSlide = 0;
+function showSlide(index) {
+slides.forEach(slide => slide.classList.remove('active'));
+slides[index].classList.add('active');
+}
+function nextSlide() {
+currentSlide = (currentSlide + 1) % slides.length;
+showSlide(currentSlide);
+}
+// Show first slide initially
+showSlide(0);
+// Auto advance slides
+setInterval(nextSlide, 5000);
+const form = document.querySelector('form');
+form.addEventListener('submit', function(e) {
+e.preventDefault();
+const formData = new FormData(form);
+const data = Object.fromEntries(formData);
+const notification = document.createElement('div');
+notification.className = 'fixed bottom-4 right-4 bg-green-500 text-white px-6 py-3 !rounded-lg shadow-lg';
+notification.textContent = 'Message sent successfully!';
+document.body.appendChild(notification);
+setTimeout(() => {
+notification.remove();
+}, 3000);
+form.reset();
+});
+});
+</script>
 </body>
 </html>
