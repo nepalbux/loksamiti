@@ -3,7 +3,44 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>लोक सांस्कृतिक संरक्षण समिति</title>
+   <style>
+        body {
+            background-color: #111;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+        }
+        
+        .hologram-text {
+            font-size: 5rem;
+            font-weight: bold;
+            color: transparent;
+            background: linear-gradient(45deg, 
+                #ff00cc, 
+                #3333ff, 
+                #00ccff, 
+                #33ff33);
+            background-size: 300% 300%;
+            -webkit-background-clip: text;
+            background-clip: text;
+            animation: hologram 4s ease infinite;
+            text-shadow: 0 0 10px rgba(255,255,255,0.3);
+        }
+        
+        @keyframes hologram {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+    </style>
+</head>
+<body>
+    <div class="hologram-text">लोक सांस्कृतिक संरक्षण समिति</div>
+</body>
+</html>
 <script src="https://cdn.tailwindcss.com"></script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
